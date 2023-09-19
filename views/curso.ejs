@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Selección de Curso</title>
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center"
+    style="height: 100vh"
+  >
+    <div class="container text-center">
+      <h1>Seleccione un Curso</h1>
+      <form action="/modulos" method="POST">
+        <div class="form-group">
+          <label for="curso">Curso:</label>
+          <select class="form-control" id="curso" name="curso">
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value=".NET">.NET</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Siguiente</button>
+      </form>
+    </div>
+  </body>
+</html>
